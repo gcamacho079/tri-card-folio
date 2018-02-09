@@ -9,13 +9,8 @@ body {
 
 .hp-card-container {
   width: 90%;
-  max-width: 1300px;
   margin: 0 auto;
 
-}
-
-h1 {
-  border: 1px solid red;
 }
 
 .hp-card {
@@ -29,7 +24,7 @@ h1 {
 }
 
 .hp-card__header img {
-  max-height: 120px;
+  max-height: 130px;
   margin: 0 auto;
   display: block;
 }
@@ -51,6 +46,8 @@ h1 {
 
 @media screen and (min-width: 780px) {
   .hp-card-container {
+    width: 100%;
+    max-width: 1300px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;

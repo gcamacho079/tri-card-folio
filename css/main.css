@@ -5,11 +5,7 @@ body {
 
 .hp-card-container {
   width: 90%;
-  max-width: 1300px;
   margin: 0 auto; }
-
-h1 {
-  border: 1px solid red; }
 
 .hp-card {
   margin: 1em auto 1em;
@@ -20,17 +16,17 @@ h1 {
   padding: 3em 0; }
 
 .hp-card__header img {
-  max-height: 120px;
+  max-height: 130px;
   margin: 0 auto;
   display: block; }
 
 .hp-card__body {
   background-color: #ffffff;
-  padding: 1em; }
+  padding: 1.2em; }
 
 .hp-card__headline {
   color: #717171;
-  font-weight: 300; }
+  font-weight: 300 !important; }
 
 .hp-card__text {
   color: #666666;
@@ -38,6 +34,8 @@ h1 {
 
 @media screen and (min-width: 780px) {
   .hp-card-container {
+    width: 100%;
+    max-width: 1300px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -46,3 +44,9 @@ h1 {
   .hp-card {
     margin: 1em;
     flex: 1; } }
+
+@media screen and (min-width: 1260px) {
+  .hp-card__body {
+    padding: 1em 2em;
+  }
+}
